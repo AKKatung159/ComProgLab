@@ -1,0 +1,141 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Oct  5 21:02:27 2021
+
+@author: Ekkrit Kanchanasiri 6434496423
+"""
+print('AK Cafe ยินดีต้อนรับครับ\n')
+menu = ('1 Coffee\n2 Tea\n3 Milk & Chocolate')
+menucof = ('1 Espresso\n2 Americano\n3 Latte\n4 Cappuccino\n5 Mocca')
+menutea = ('1 Tea\n2 Greentea with milk\n3 Tea with milk\n4 Black tea\n5 Lemon tea')
+menumc = ('1 Fresh milk\n2 Chocolate\n3 Dark chocolate')
+menuhif = ('1 Hot\n2 Iced\n3 Frappe')
+print(menu)
+select = int(input('สนใจรับเครื่องดื่มอะไรดีครับ : '))
+if select == 1 :
+    print(menucof)
+    selectcof =int(input('สนใจรับกาแฟแบบไหนดีครับ : '))
+    if selectcof == 1 :
+        print(menuhif)
+        selecthif =int(input('สนใจรับเอสเปรสโซ่แบบไหนดีครับ : '))
+        if selecthif == 1 :
+            print('กาแฟเอสเปรสโซ่ร้อน 1 แก้วคิดเป็นเงิน 35 บาทครับ')
+        elif selecthif == 2 :
+            print('กาแฟเอสเปรสโซ่เย็น 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+        else :
+            print('กาแฟเอสเปรสโซ่ปั่น 1 แก้วคิดเป็นเงิน 50 บาทครับ')
+    elif selectcof == 2 :
+         print(menuhif)
+         selecthif =int(input('สนใจรับอเมริกาโน่แบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('กาแฟอเมริกาโน่ร้อน 1 แก้วคิดเป็นเงิน 35 บาทครับ')
+         elif selecthif == 2 :
+             print('กาแฟอเมริกาโน่เย็น 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+         else :
+             print('กาแฟอเมริกาโน่ปั่น 1 แก้วคิดเป็นเงิน 50 บาทครับ')
+    elif selectcof == 3 :
+         print(menuhif)
+         selecthif =int(input('สนใจรับลาเต้แบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('กาแฟลาเต้ร้อน 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+         elif selecthif == 2 :
+             print('กาแฟลาเต้เย็น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+         else :
+             print('กาแฟลาเต้ปั่น 1 แก้วคิดเป็นเงิน 60 บาทครับ')
+    elif selectcof == 4 :
+         print(menuhif)
+         selecthif =int(input('สนใจรับคาปูชิโน่แบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('กาแฟคาปูชิโน่ร้อน 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+         elif selecthif == 2 :
+             print('กาแฟคาปูชิโน่เย็น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+         else :
+             print('กาแฟคาปูชิโน่ปั่น 1 แก้วคิดเป็นเงิน 60 บาทครับ')
+    else :
+         print(menuhif)
+         selecthif =int(input('สนใจรับมอคค่าแบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('กาแฟมอคค่าร้อน 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+         elif selecthif == 2 :
+             print('กาแฟมอคค่าเย็น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+         else :
+             print('กาแฟมอคค่าปั่น 1 แก้วคิดเป็นเงิน 60 บาทครับ')
+elif select == 2 :
+    print(menutea)
+    selecttea =int(input('สนใจรับชาแบบไหนดีครับ : '))
+    if selecttea == 1 :
+        print(menuhif)
+        selecthif =int(input('สนใจรับชาแบบไหนดีครับ : '))
+        if selecthif == 1 :
+            print('ชาร้อน 1 แก้วคิดเป็นเงิน 40 บาทครับ')
+        elif selecthif == 2 :
+            print('ชาเย็น 1 แก้วคิดเป็นเงิน 50 บาทครับ')
+        else :
+            print('ชาปั่น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+    elif selecttea == 2 :
+         print(menuhif)
+         selecthif =int(input('สนใจรับชาเขียวนมแบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('ชาเขียวนมร้อน 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+         elif selecthif == 2 :
+             print('ชาเขียวนมเย็น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+         else :
+             print('ชาเขียวนมปั่น 1 แก้วคิดเป็นเงิน 60 บาทครับ')
+    elif selecttea == 3 :
+         print(menuhif)
+         selecthif =int(input('สนใจรับชานมแบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('ชานมร้อน 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+         elif selecthif == 2 :
+             print('ชานมเย็น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+         else :
+             print('ชานมปั่น 1 แก้วคิดเป็นเงิน 60 บาทครับ')
+    elif selecttea == 4 :
+         print(menuhif)
+         selecthif =int(input('สนใจรับชาดำแบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('ชาดำร้อน 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+         elif selecthif == 2 :
+             print('ชาดำเย็น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+         else :
+             print('ชาดำปั่น 1 แก้วคิดเป็นเงิน 60 บาทครับ')
+    else :
+         print(menuhif)
+         selecthif =int(input('สนใจรับชามะนาวแบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('ชามะนาวร้อน 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+         elif selecthif == 2 :
+             print('ชามะนาวเย็น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+         else :
+             print('ชามะนาวปั่น 1 แก้วคิดเป็นเงิน 60 บาทครับ')
+else :
+    print(menumc)
+    selectmc =int(input('สนใจรับนมและช๊อคโกแลตแบบไหนดีครับ : '))
+    if selectmc == 1 :
+        print(menuhif)
+        selecthif =int(input('สนใจรับนมสดแบบไหนดีครับ : '))
+        if selecthif == 1 :
+            print('นมสดร้อน 1 แก้วคิดเป็นเงิน 35 บาทครับ')
+        elif selecthif == 2 :
+            print('นมสดเย็น 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+        else :
+            print('นมสดปั่น 1 แก้วคิดเป็นเงิน 50 บาทครับ')
+    elif selectmc == 2 :
+         print(menuhif)
+         selecthif =int(input('สนใจรับช๊อคโกแลตแบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('ช๊อคโกแลตร้อน 1 แก้วคิดเป็นเงิน 40 บาทครับ')
+         elif selecthif == 2 :
+             print('ช๊อคโกแลตเย็น 1 แก้วคิดเป็นเงิน 50 บาทครับ')
+         else :
+             print('ช๊อคโกแลตปั่น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+    else :
+         print(menuhif)
+         selecthif =int(input('สนใจรับดาร์คช๊อคโกแลตแบบไหนดีครับ : '))
+         if selecthif == 1 :
+             print('ดาร์คช๊อคโกแลตร้อน 1 แก้วคิดเป็นเงิน 45 บาทครับ')
+         elif selecthif == 2 :
+             print('ดาร์คช๊อคโกแลตเย็น 1 แก้วคิดเป็นเงิน 55 บาทครับ')
+         else :
+             print('ดาร์คช๊อคโกแลตปั่น 1 แก้วคิดเป็นเงิน 60 บาทครับ')

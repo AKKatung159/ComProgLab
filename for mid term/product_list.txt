@@ -1,0 +1,10 @@
+1:Pepsi:15
+2:Coke:18
+3:Water:10
+4:Milk:10
+5:Oishi:15
+6:Lays:20
+7:Hanami:20
+8:Testo:20
+9:Twisty:20
+10:Taro:20
